@@ -1,7 +1,7 @@
 import os
 
 from flask import Flask, session
-from flask import render_template
+from flask import render_template, request, redirect
 from flask_session import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
@@ -29,7 +29,13 @@ def index():
 
 @app.route("/login")
 def login():
-    return render_template("login.html")
+       return render_template("login.html")
+
+@app.route("/loggedIn", methods=["GET", "POST"])
+def loggedIn():
+    if request.method == "GET":
+        return redirect("/")
+    return render_template('loggedIn.html')
 
 @app.route("/register")
 def register():
