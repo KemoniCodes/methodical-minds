@@ -1,0 +1,23 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "Web Programming with Python and JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w static/scss -o static/css -r"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KemoniCodes/methodical-minds.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KemoniCodes/methodical-minds/issues"
+  },
+  "homepage": "https://github.com/KemoniCodes/methodical-minds#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

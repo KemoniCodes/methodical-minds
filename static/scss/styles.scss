@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+ nav {
+    text-align: right;
+
+    ul {
+        list-style: none;
+        display: inline-flex;
+    }
+    
+    li {
+        padding-right: 8px;
+    }
+ }
+
+
+
+
