@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif; }
+
+div.login {
+  text-align: center;
+  padding: 24px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 3px solid;
+  border-radius: 16px;
+  padding: 40px;
+  width: 80vw;
+  height: 90vh; }
+  div.login h1 {
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  div.login form {
+    padding: 24px;
+    display: grid; }
+  div.login label {
+    padding: 8px; }
+  div.login input {
+    margin: 8px;
+    width: 20vw;
+    outline: none;
+    border-radius: 5px; }
+  div.login button {
+    padding: 3px;
+    border-radius: 10px;
+    width: 16vw;
+    margin-top: 8px;
+    text-align: center;
+    justify-self: center;
+    outline: none;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: darkgoldenrod;
+    color: whitesmoke;
+    letter-spacing: 2px; }
+  div.login a {
+    text-decoration: underline;
+    text-decoration-line: 3px;
+    text-decoration-color: darkgoldenrod;
+    color: black; }
