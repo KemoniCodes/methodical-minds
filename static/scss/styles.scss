@@ -20,17 +20,23 @@ h1 {
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-top: 0px;
+    padding-top: 40px;
     // color: #A0A0A0;
     color: $secondary-color;
 }
 
  nav {
-    text-align: right;
+    // text-align: right;
+    margin: 16px 24px 32px 24px;
+    margin-bottom: 0px;
 
     ul {
         list-style: none;
         display: inline-flex;
-
+        padding:0px;
+        float: right;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     
     li {
@@ -84,6 +90,17 @@ form {
         font-family: 'Lato', sans-serif;
     }
 }
+
+span.back {
+    font-weight: 300;
+    text-align: right;
+
+}
+
+span {
+    display: inline-flex;
+}
+
 div.results-box {
     // margin-left: 80px;
     padding-top: 24px;

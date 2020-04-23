@@ -14,13 +14,19 @@ h1 {
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-top: 0px;
+  padding-top: 40px;
   color: darkslategray; }
 
 nav {
-  text-align: right; }
+  margin: 16px 24px 32px 24px;
+  margin-bottom: 0px; }
   nav ul {
     list-style: none;
-    display: inline-flex; }
+    display: inline-flex;
+    padding: 0px;
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 0px; }
   nav li {
     padding-right: 8px;
     font-weight: 300;
@@ -57,6 +63,13 @@ form {
     font-style: italic;
     letter-spacing: 2px;
     font-family: 'Lato', sans-serif; }
+
+span.back {
+  font-weight: 300;
+  text-align: right; }
+
+span {
+  display: inline-flex; }
 
 div.results-box {
   padding-top: 24px;

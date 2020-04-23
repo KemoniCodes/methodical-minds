@@ -1,13 +1,43 @@
 {% extends "index.html" %}
 
+{% block heading %}
+<nav>
+    <span class="back">
+        <a href="{{url_for('index')}}">BACK</a>
+    </span>
+    <ul>
+        <span>
+            <li><a href="{{url_for('login')}}">LOG IN</a></li>
+            <li><a href="{{url_for('register')}}">REGISTER</a></li>
+        </span>
+    </ul>
+</nav>
+{% endblock %}
+
 {% block body %}
 <h1>Methodical Minds</h1>
+
 <div class="results-box">
     <h2>RESUTLTS FOUND:</h2>
-    <ul class="results">
-        <li>kl</li>
-        <li>kl</li>
-    </ul>
+    <table class="results">
+        <thead>
+            <tr>
+                <th scope="col">ISBN</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in result %}
+            <tr>
+                <td>{{item.isbn}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.author}}</td>
+                <!-- <td></td> -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
 
 
