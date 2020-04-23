@@ -1,15 +1,20 @@
 * {
   box-sizing: border-box;
-  font-family: 'Manrope', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  background-color: #FFEFD5; }
+
+body {
+  color: darkslategray; }
 
 h1 {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  font-size: 48px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight: 200;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin-top: 0px; }
+  margin-top: 0px;
+  color: darkslategray; }
 
 nav {
   text-align: right; }
@@ -17,9 +22,67 @@ nav {
     list-style: none;
     display: inline-flex; }
   nav li {
-    padding-right: 8px; }
+    padding-right: 8px;
+    font-weight: 300;
+    color: darkslategray; }
   nav a {
     text-decoration: none;
-    color: black; }
+    color: darkslategray; }
   nav a:visited {
-    color: black; }
+    color: darkslategray;
+    opacity: .8%; }
+  nav a:hover {
+    border-bottom: darkgoldenrod solid 1px;
+    padding-bottom: 3px; }
+
+form {
+  text-align: center;
+  margin-top: 64px;
+  border-bottom: 2px solid darkgoldenrod;
+  padding-bottom: 16px;
+  margin-right: 144px;
+  margin-left: 144px; }
+  form input.search {
+    width: 75vw;
+    padding: 13px;
+    border: 2px solid darkslategray;
+    background-color: darkslategray;
+    color: gainsboro;
+    outline: none; }
+  form ::placeholder {
+    color: gainsboro;
+    font-size: 11px;
+    font-weight: 200;
+    text-transform: lowercase;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif; }
+
+div.results-box {
+  padding-top: 24px;
+  margin-right: 144px;
+  margin-left: 144px; }
+  div.results-box h2 {
+    font-weight: 200;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    border-bottom: 2px solid darkgoldenrod;
+    padding-bottom: 16px;
+    margin-right: 64px;
+    margin-left: 64px; }
+  div.results-box ul.results {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 64px;
+    margin-left: 64px; }
+    div.results-box ul.results li {
+      padding-bottom: 5px;
+      font-weight: 200;
+      font-size: 1.15rem;
+      border: 2px solid darkslategray;
+      color: gainsboro;
+      margin-bottom: 5px;
+      background-color: darkslategray;
+      padding: 8px; }
