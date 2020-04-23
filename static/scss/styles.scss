@@ -12,10 +12,14 @@ body{
     color: $secondary-color;
 
 }
+div {
+    position: absolute;
+    top: 30%;
+}
 h1 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 200;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -91,6 +95,29 @@ form {
     }
 }
 
+i.fas.fa-search {
+    padding-left: 5px;
+    font-size: 1.3rem;
+}
+
+i.fas.fa-chevron-left {
+    padding-top: 2px;
+    padding-right: 4px;
+}
+
+
+
+button {
+    border: none;
+    outline: none;
+    color: $secondary-color;
+    padding: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 span.back {
     font-weight: 300;
     text-align: right;
@@ -106,6 +133,7 @@ div.results-box {
     padding-top: 24px;
     margin-right: 144px;
     margin-left: 144px;
+    display: contents;
 
     h2 {
         font-weight: 200;
@@ -114,8 +142,10 @@ div.results-box {
         letter-spacing: 1px;
         border-bottom: 2px solid darkgoldenrod;
         padding-bottom: 16px;
-        margin-right: 64px;
-        margin-left: 64px;
+        margin-right: 224PX;
+        margin-left: 224px;
+        margin-bottom: 32px;
+        margin-top: 48px;
     }
 
     ul.results {
@@ -140,7 +170,29 @@ div.results-box {
     }
 }
 
+table.results {
+    width: 55vw;
+    text-align: center;
+    margin: auto;
+}
 
+thead {
+    text-align: left;
+}
+
+th {
+    padding-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: darkgoldenrod;
+}
+
+td {
+    padding-bottom: 16px;
+}
+
+tbody {
+    text-align: left;
+}
 //  div.login {
 //     text-align: center;
 //     padding: 24px;

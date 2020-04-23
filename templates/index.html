@@ -40,16 +40,17 @@
 {% endblock %}
 
 {% block body %}
+<div>
+    <h1>Methodical Minds</h1>
 
-<h1>Methodical Minds</h1>
+    <form action="{{url_for('search')}}" method="post">
+        {%for books in books%} {%endfor%}
 
-<form action="{{url_for('search')}}" method="post">
-    {%for books in books%} {%endfor%}
-
-    <input name="input-search" type="text" class="search" placeholder=" Search by ...... ISBN, Title, Author">
-    </input>
-</form>
-
+        <input name="input-search" type="text" class="search" placeholder=" Search by ...... ISBN, Title, Author">
+        <button type="submit"><i class="fas fa-search"></i></button>
+        </input>
+    </form>
+</div>
 
 {% endblock %}
 
