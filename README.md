@@ -6,7 +6,7 @@ Essentially I followed the syllabus' guidelines as to what the application shoul
   - Authentication
     - ablity to log in, register, and log out
   - Import a '.csv' file into your database (PostgreSQL), via an 'import.py' file.
-  - Search filter that allows user to search using either the isbn number, author, or title of the book.
+  - Search filter that allows the user to search using either the isbn number, author, or title of the book.
     - returns data based on the query made
   -
   -
