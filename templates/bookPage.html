@@ -1,0 +1,18 @@
+{% extends "search.html" %}
+
+{% block body %}
+
+<div id="details">
+    <div class="row">
+
+        <div class="container">
+            <h1>Book Details</h1>
+            <img src="http://covers.openlibrary.org/b/isbn/{{ isbn }}-M.jpg">
+            <p class="lead">ISBN: {{isbn}} </p>
+            <p class="lead">Title: {{title}}</p>
+            <p class="lead">Author: {{author}}</p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

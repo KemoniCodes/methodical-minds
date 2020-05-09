@@ -13,13 +13,24 @@ div {
 h1 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 200;
-  letter-spacing: 3px;
+  letter-spacing: 6.8px;
   text-transform: uppercase;
   margin-top: 0px;
   padding-top: 40px;
   color: darkslategray; }
+
+svg {
+  color: darkslategray;
+  height: 50px;
+  transform: scale(1);
+  transition: all 0.38s ease-in-out;
+  cursor: pointer; }
+
+svg:hover {
+  transform: scale(1.36);
+  color: #d9a5b2; }
 
 nav {
   margin: 16px 24px 32px 24px;
@@ -34,7 +45,8 @@ nav {
   nav li {
     padding-right: 8px;
     font-weight: 300;
-    color: darkslategray; }
+    color: darkslategray;
+    font-size: 18px; }
   nav a {
     text-decoration: none;
     color: darkslategray; }
@@ -138,7 +150,14 @@ th {
   text-decoration-color: darkgoldenrod; }
 
 td {
-  padding-bottom: 16px; }
+  padding-bottom: 16px;
+  cursor: pointer; }
+  td a {
+    text-decoration: none;
+    color: darkslategray; }
+  td a:hover {
+    text-decoration-color: darkgoldenrod !important;
+    text-decoration: underline; }
 
 tbody {
   text-align: left; }
