@@ -2,17 +2,38 @@
 
 {% block body %}
 
-<div id="details">
-    <div class="row">
+<h1 id="details">Book Details</h1>
 
-        <div class="container">
-            <h1>Book Details</h1>
-            <img src="http://covers.openlibrary.org/b/isbn/{{ isbn }}-M.jpg">
-            <p class="lead">ISBN: {{isbn}} </p>
-            <p class="lead">Title: {{title}}</p>
-            <p class="lead">Author: {{author}}</p>
-        </div>
+<div class="details">
+    <div class="cover-image">
+        <img src="http://covers.openlibrary.org/b/isbn/{{ isbn }}-L.jpg">
     </div>
 
+    <div class="book-details">
+        <h3>{{title}} ({{year}})</h3>
+        <h4>by {{author}}<h4>
+                <span>
+                    <p> {{ data['books'][0]['work_reviews_count'] }} reviews</p>
+                    <p> {{ data['books'][0]['average_rating'] }} out of 5</p>
+                </span>
+                <h5>ISBN: {{isbn}}</h5>
+
+                <div class="review">
+                    <h2>LEAVE A REVIEW:</h2>
+                    <p>
+                        <i class="fas fa-star unchecked" id="one"></i>
+                        <i class="fas fa-star unchecked" id="two"></i>
+                        <i class="fas fa-star unchecked" id="three"></i>
+                        <i class="fas fa-star unchecked" id="four"></i>
+                        <i class="fas fa-star unchecked" id="five"></i>
+                        <span>out of 5</span>
+                    </p>
+                </div>
+    </div>
+
+
 </div>
+
+<script src="/static/js/styles.js"></script>
+
 {% endblock %}

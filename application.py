@@ -83,11 +83,14 @@ def search():
 def book(isbn):
     #import columns from database 
     res = db.execute("SELECT * FROM books WHERE isbn = :isbn", {"isbn": isbn}).fetchone()
-    return render_template("bookPage.html", isbn = isbn, title = res.title, author = res.author)
-    r = requests.get("https://www.goodreads.com/book/review_counts.json", params={"key": "74JSBvyeNTPrZxlcIOHw", "isbns": isbn})
-    if r.status_code != 200:
+ 
+    url = requests.get("https://www.goodreads.com/book/review_counts.json", params={"key": "74JSBvyeNTPrZxlcIOHw", "isbns": isbn})
+    data= url.json()
+    
+    if url.status_code != 200:
       raise ValueError
-    # return render_template("bookPage.html", isbn = isbn, title = title, author = author)
+    return render_template("bookPage.html", isbn = isbn, title = res.title, author = res.author, year = res.year, data=data)
+ 
 
     
 
