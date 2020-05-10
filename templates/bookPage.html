@@ -15,24 +15,73 @@
                 <span>
                     <p> {{ data['books'][0]['work_reviews_count'] }} reviews</p>
                     <p> {{ data['books'][0]['average_rating'] }} out of 5</p>
+                    <a href="#reviews">
+                        <p class="more">SEE REVIEWS</p>
+                    </a>
                 </span>
                 <h5>ISBN: {{isbn}}</h5>
 
                 <div class="review">
                     <h2>LEAVE A REVIEW:</h2>
-                    <p>
-                        <i class="fas fa-star unchecked" id="one"></i>
-                        <i class="fas fa-star unchecked" id="two"></i>
-                        <i class="fas fa-star unchecked" id="three"></i>
-                        <i class="fas fa-star unchecked" id="four"></i>
-                        <i class="fas fa-star unchecked" id="five"></i>
-                        <span>out of 5</span>
-                    </p>
+                    <form method="POST" class="review">
+
+                        <p>
+                            <i name="rating" class="fas fa-star unchecked" id="one "></i>
+                            <i name="rating" class="fas fa-star unchecked" id="two"></i>
+                            <i name="rating" class="fas fa-star unchecked" id="three"></i>
+                            <i name="rating" class="fas fa-star unchecked" id="four"></i>
+                            <i name="rating" class="fas fa-star unchecked" id="five"></i>
+                            <span id="out-of">0</span>
+                        </p>
+
+
+                        <h4>What did you think?</h4>
+                        <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                        <button><input id="submit" type="submit" value="Submit"></button>
+                    </form>
+                </div>
+
+                <div class="reviews" id="reviews">
+                    <div class="row">
+                        <h2>REVIEWS:</h2>
+                        <table class="results">
+                            <thead>
+                                <tr>
+                                    <th scope="col">DATE</th>
+                                    <th scope="col">RATING</th>
+                                    <th scope="col">REVIEW</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                {% for item in reviews %}
+                                <tr>
+                                    <td>
+                                        {{item.date}}
+                                    </td>
+                                    <td>
+                                        {{item.rating}}
+                                    </td>
+                                    <td>
+                                        {{item.comment}}
+                                    </td>
+                                </tr>
+
+
+
+                                {% endfor %}
+                            </tbody>
+
+                        </table>
+                    </div>
                 </div>
     </div>
 
 
+
 </div>
+
+
 
 <script src="/static/js/styles.js"></script>
 

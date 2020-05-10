@@ -273,9 +273,19 @@ h1#details {
             p {
                 margin-bottom: 0px;
                 margin-top: 0px;
-                padding-right: 16px;
+                padding-right: 10px;
                 font-size: 16px;
                 letter-spacing: 0px;
+            }
+
+            p.more {
+                text-decoration: underline darkgoldenrod solid;
+                cursor: pointer;
+                padding-left: 8px;
+            }
+
+            a {
+                color: $secondary-color;
             }
         }
 
@@ -311,14 +321,81 @@ h1#details {
             letter-spacing: 2px;
             text-align: left;
         }
+
+        h4 {
+            margin-top: 28px;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        form.review {
+            text-align: left;
+            margin-top: 0px;
+            border: none;
+            margin: 0px;
+        }
+
+        textarea {
+            margin: 0px;
+            width: 340px;
+            height: 180px;  
+            border: darkslategray solid 1px;
+            outline: none; 
+            font-size: 14px;
+            padding: 10px;             
+        }
+
+        button {
+            display: block;
+            margin-top: 16px;
+        }
+
+        input {
+            outline: none;
+            border-radius: 5px;
+            font-size: 16px;
+            padding: 5px;
+            border: $secondary-color solid 1px;
+            text-align: center;
+            width: 80px;
+            background-color: $secondary-color;
+            color: #FFEFD5;
+            font-weight: 100;
+            cursor: pointer;
+        }
+
+        .clicked {
+            background-color: darkgoldenrod;
+            border: darkgoldenrod solid 1px;
+
+        }
     }
 
     div.cover-image {
         display: flex;
         width: 35%;
+        height: 100%;
         margin: 0px;
         margin-right: 48px;
         position: relative;
         top: 0%;
     }
+
+    div.reviews {
+        width: 100%;
+        top: 9vh;
+        position: relative;
+        text-align: left;
+    
+        div.row {
+            h2 {
+                text-decoration: underline solid darkgoldenrod;
+                letter-spacing: 5.5px;
+                text-align: left;
+                font-size: 48px;
+            }
+        }
+       
+    }
 }
+

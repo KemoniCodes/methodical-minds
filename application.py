@@ -4,7 +4,7 @@ import requests
 
 from flask import Flask, session
 import urllib3
-import json
+import json, datetime
 from flask import render_template, request, redirect, flash, url_for, jsonify
 from flask_session import Session
 from sqlalchemy import create_engine
@@ -89,9 +89,25 @@ def book(isbn):
     
     if url.status_code != 200:
       raise ValueError
-    return render_template("bookPage.html", isbn = isbn, title = res.title, author = res.author, year = res.year, data=data)
  
+ 
+ 
+# get book's id
+    book_id, = db.execute("SELECT book_id FROM books WHERE isbn = :isbn",{"isbn":isbn}).fetchone()
+    # review submission
+    if request.method == "POST":
+        # get form data and date & time 
+        comment = request.form.get("comment")
+        rating = request.form.get("rating")
+        date = datetime.datetime.now()
+    
+        db.execute("INSERT INTO reviews (book_id, comment, rating, date) VALUES (:book_id, :comment, :rating, :date)", {"date":date, "comment":comment, "rating":rating, "book_id":book_id})
+        db.commit()
+    # add reviews to the page using for loop
+    reviews = db.execute("SELECT * FROM reviews WHERE book_id = :book_id",
+            {"book_id": book_id}).fetchall()
 
+    return render_template("bookPage.html", reviews = reviews, isbn = isbn, title = res.title, author = res.author, year = res.year, data=data, )
     
 
 

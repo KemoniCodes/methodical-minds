@@ -8,7 +8,22 @@ CREATE TABLE books
     year INTEGER NOT NULL
 );
 
-INSERT INTO books
-    (isbn, title, author, year)
+CREATE TABLE users
+(
+    id SERIAL PRIMARY KEY,
+    email VARCHAR UNIQUE NOT NULL,
+    password VARCHAR NOT NULL
+);
+
+CREATE TABLE reviews
+(
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users,
+    book_id INTEGER REFERENCES books,
+    rating SMALLINT,
+    comment VARCHAR,
+    date DATE
+);
+
 
 

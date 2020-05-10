@@ -194,9 +194,15 @@ div.details {
     div.details div.book-details span p {
       margin-bottom: 0px;
       margin-top: 0px;
-      padding-right: 16px;
+      padding-right: 10px;
       font-size: 16px;
       letter-spacing: 0px; }
+    div.details div.book-details span p.more {
+      text-decoration: underline darkgoldenrod solid;
+      cursor: pointer;
+      padding-left: 8px; }
+    div.details div.book-details span a {
+      color: darkslategray; }
     div.details div.book-details h5 {
       font-size: 18px;
       letter-spacing: 1.8px;
@@ -219,10 +225,56 @@ div.details {
       text-decoration: underline solid darkgoldenrod;
       letter-spacing: 2px;
       text-align: left; }
+    div.details div.review h4 {
+      margin-top: 28px;
+      margin-bottom: 8px;
+      font-size: 16px; }
+    div.details div.review form.review {
+      text-align: left;
+      margin-top: 0px;
+      border: none;
+      margin: 0px; }
+    div.details div.review textarea {
+      margin: 0px;
+      width: 340px;
+      height: 180px;
+      border: darkslategray solid 1px;
+      outline: none;
+      font-size: 14px;
+      padding: 10px; }
+    div.details div.review button {
+      display: block;
+      margin-top: 16px; }
+    div.details div.review input {
+      outline: none;
+      border-radius: 5px;
+      font-size: 16px;
+      padding: 5px;
+      border: darkslategray solid 1px;
+      text-align: center;
+      width: 80px;
+      background-color: darkslategray;
+      color: #FFEFD5;
+      font-weight: 100;
+      cursor: pointer; }
+    div.details div.review .clicked {
+      background-color: darkgoldenrod;
+      border: darkgoldenrod solid 1px; }
   div.details div.cover-image {
     display: flex;
     width: 35%;
+    height: 100%;
     margin: 0px;
     margin-right: 48px;
     position: relative;
     top: 0%; }
+  div.details div.reviews {
+    width: 100%;
+    top: 9vh;
+    position: relative;
+    text-align: left; }
+    div.details div.reviews div.row h2 {
+      text-decoration: underline solid darkgoldenrod;
+      letter-spacing: 5.5px;
+      text-align: left;
+      font-size: 48px; }
