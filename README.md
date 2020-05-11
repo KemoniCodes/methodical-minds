@@ -15,3 +15,5 @@ Essentially I followed the syllabus' guidelines as to what the application shoul
   - View GoodReads ratings and number of reviews per book using the GoodReads API
   
   Here is a prievew of the application, as well as a link listed above to demo!
+  
+  ![](methodical-minds.gif)
