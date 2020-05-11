@@ -26,12 +26,16 @@
                     <form method="POST" class="review">
 
                         <p>
-                            <i name="rating" class="fas fa-star unchecked" id="one "></i>
-                            <i name="rating" class="fas fa-star unchecked" id="two"></i>
-                            <i name="rating" class="fas fa-star unchecked" id="three"></i>
-                            <i name="rating" class="fas fa-star unchecked" id="four"></i>
-                            <i name="rating" class="fas fa-star unchecked" id="five"></i>
-                            <span id="out-of">0</span>
+
+                            <i class="fas fa-star unchecked" id="one"></i>
+                            <i class="fas fa-star unchecked" id="two"></i>
+                            <i class="fas fa-star unchecked" id="three"></i>
+                            <i class="fas fa-star unchecked" id="four"></i>
+                            <i class="fas fa-star unchecked" id="five"></i>
+                            <input id="out-of" style="background: none; border: none; color: darkslategray;"
+                                name="rating">
+                            </input>
+                            <!-- <span id="out-of">0</span> -->
                         </p>
 
 
@@ -48,7 +52,6 @@
                             <thead>
                                 <tr>
                                     <th scope="col">DATE</th>
-                                    <th scope="col">RATING</th>
                                     <th scope="col">REVIEW</th>
                                 </tr>
                             </thead>
@@ -60,15 +63,9 @@
                                         {{item.date}}
                                     </td>
                                     <td>
-                                        {{item.rating}}
-                                    </td>
-                                    <td>
                                         {{item.comment}}
                                     </td>
                                 </tr>
-
-
-
                                 {% endfor %}
                             </tbody>
 

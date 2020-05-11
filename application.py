@@ -9,7 +9,7 @@ from flask import render_template, request, redirect, flash, url_for, jsonify
 from flask_session import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
-# from models import *
+from helper import login_required
 
 app = Flask(__name__)
 # app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
@@ -35,6 +35,7 @@ key = os.getenv("KEY")
 
 
 @app.route("/")
+
 def index():
     books = db.execute("SELECT * FROM books").fetchall()
     if books is None:
@@ -107,7 +108,7 @@ def book(isbn):
     reviews = db.execute("SELECT * FROM reviews WHERE book_id = :book_id",
             {"book_id": book_id}).fetchall()
 
-    return render_template("bookPage.html", reviews = reviews, isbn = isbn, title = res.title, author = res.author, year = res.year, data=data, )
+    return render_template("bookPage.html", reviews = reviews, isbn = isbn, title = res.title, author = res.author, year = res.year, data=data)
     
 
 

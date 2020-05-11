@@ -20,7 +20,7 @@ CREATE TABLE reviews
     id SERIAL PRIMARY KEY,
     user_id INTEGER REFERENCES users,
     book_id INTEGER REFERENCES books,
-    rating SMALLINT,
+    rating NUMERIC,
     comment VARCHAR,
     date DATE
 );

@@ -6,14 +6,11 @@
         <a href="{{url_for('index')}}"><i class="fas fa-chevron-left"></i></a>
 
         </i>
-        <a href="{{url_for('index')}}">BACK</a>
+        <a href="{{url_for('loggedIn')}}">BACK</a>
     </span>
-    <ul>
-        <span>
-            <li><a href="{{url_for('login')}}">LOG IN</a></li>
-            <li><a href="{{url_for('register')}}">REGISTER</a></li>
-        </span>
-    </ul>
+
+    <a href="{{url_for('index')}}">SIGN OUT</a>
+
 </nav>
 {% endblock %}
 
