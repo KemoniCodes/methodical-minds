@@ -107,6 +107,7 @@ def book(isbn):
     # add reviews to the page using for loop
     reviews = db.execute("SELECT * FROM reviews WHERE book_id = :book_id",
             {"book_id": book_id}).fetchall()
+  
 
     return render_template("bookPage.html", reviews = reviews, isbn = isbn, title = res.title, author = res.author, year = res.year, data=data)
     
