@@ -277,4 +277,5 @@ div.details {
       text-decoration: underline solid darkgoldenrod;
       letter-spacing: 5.5px;
       text-align: left;
-      font-size: 48px; }
+      font-size: 48px;
+      height: 130vh; }
