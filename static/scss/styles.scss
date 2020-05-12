@@ -242,7 +242,6 @@ h1#details {
     display: flex;
     width: 100wh;
     width: auto;
-    height: 130vh;
     margin: 88px;
     padding-top: 32px;
     position: relative;
@@ -389,6 +388,7 @@ h1#details {
         text-align: left;
     
         div.row {
+            height: 70vh;
             h2 {
                 text-decoration: underline solid darkgoldenrod;
                 letter-spacing: 5.5px;
