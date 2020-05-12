@@ -1,30 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
-
-    <title>Methodical Minds</title>
-</head>
-
-<body>
-
-    <nav>
-        <ul>
-            <li>LOG IN</li>
-            <li>REGISTER</li>
-        </ul>
-    </nav>
-
-    <h1>Methodical Minds</h1>
-
-
-</body>
-
-</html> -->
 
 {% extends "layout.html" %}
 
@@ -61,40 +35,3 @@
 
 {% endblock %}
 
-<!-- <div class=" form-group">
-    <input class="form-control" name="name" placeholder="Passenger Name">
-    </div>
-
-    <div class="form-group">
-        <button class="btn btn-primary">Book Flight</button> -->
-
-
-
-<!-- <input action="{{books}}" type="text" value="{{books.author}}" name="books" class="search"
-        placeholder="Search by city, county, or postal code" /> -->
-
-
-
-
-<!-- <form action="{{ url_for('search') }}" method="post">
-
-    <div class="form-group">
-        <select class="form-control" name="flight_id">
-            {% for flight in flights %}
-                <option value="{{ flight.id }}">{{ flight.origin }} to {{ flight.destination }}</option>
-            {% endfor %}
-        </select>
-    </div>
-
-    <div class="form-group">
-        <input class="form-control" name="name" placeholder="Passenger Name">
-    </div>
-
-    <div class="form-group">
-        <button class="btn btn-primary">Book Flight</button>
-    </div>
-
-</form> -->
-
-<!-- {% for book in books %}
-{% endfor %} -->
