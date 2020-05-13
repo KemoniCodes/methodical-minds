@@ -1,5 +1,3 @@
-
-
 {% extends "layout.html" %}
 
 
@@ -25,7 +23,7 @@
     <form action="{{url_for('search')}}" method="POST">
         {%for books in books%} {%endfor%}
 
-        <input name="input-search" type="text" class="search" placeholder=" Search by ...... ISBN, Title, Author">
+        <input name="input-search" type="text" class="search" placeholder=" Search by ... ISBN, Title, Author">
         <button type="submit"><i class="fas fa-search"></i></button>
         </input>
     </form>
@@ -34,4 +32,3 @@
 
 
 {% endblock %}
-
