@@ -400,9 +400,175 @@ h1#details {
     }
 }
 
-@media (max-width: 360px) {
+
+// # MOBILE RESPONSIVNESS
+@media screen  and (max-width: 360px) {
+    nav {
+        width: 330px;
+
+        li {
+            font-size: 14px;
+        }
+    }
+    
     div {
-    position: absolute;
-    top: 50%;
+        position: absolute;
+        top: 30%;
+        width: 360px;
+
+        h1 {
+            margin-right: 0px;
+            width: 340px;
+            font-size: 27px;
+        
+
+            svg {
+                height: 32px;
+            }
+        }
+
+        form {
+            width: 303px;
+            margin-left: 24px;
+            margin-right: 0px;
+
+            input.search {
+                width: 255px;
+                padding: 10px;            
+            }
+
+            i.fas.fa-search {
+                padding-left: 4px;
+                font-size: 1.1rem;
+    
+            }
+
+        }
+
+    }
+
+}
+
+@media screen  and (min-width: 375px) {
+    nav {
+        width: 340px;
+    }
+
+    div {
+        width: 360px;
+
+        h1 {
+            font-size: 35px;
+
+            svg {
+                height: 45px;
+            }
+        }
+
+        form {
+            margin-left: 10px;
+            margin-right: 0px;
+            width: 340px;
+
+            input.search {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media screen  and (min-width: 411px) {
+
+    div {
+        width: 360px;
+
+        h1 {
+            font-size: 35px;
+            padding-left: 33px;
+
+            svg {
+                height: 45px;
+            }
+        }
+
+        form {
+            margin-left: 35px;
+            margin-right: 0px;
+
+            input.search {
+                width: 67vw;
+            }
+
+            i.fas.fa-search {
+                font-size: 1.2rem;
+                padding-left: 5px;
+            }
+        }
+    }
+
+}
+
+@media screen  and (min-width: 768px) {
+    nav {
+        width: 730px;
+        
+        li {
+            font-size: 24px;
+        }
+    }
+
+    div {
+        width: 750px;
+
+        h1 {
+            font-size: 49px;
+            padding-left: 0px;
+        }
+
+        form {
+            width: 700px;
+            margin-left: 30px;
+
+            input.search {
+                width: 83vw;
+            }
+        }
+    }
+}
+
+@media screen  and (min-width: 1024px) {
+    nav {
+        width: 970px;
+        
+        li {
+            font-size: 32px;
+        }
+    }
+
+    div {
+        width: 990px;
+
+        h1 {
+            font-size: 65px;
+            padding-left: 0px;
+
+            svg {
+                height: 60px;
+            }
+        }
+
+        form {
+            width: 950px;
+            margin-left: 30px;
+
+            input.search {
+                width: 83vw;
+            }
+
+            i.fas.fa-search {
+                font-size: 1.9rem;
+                padding-left: 8px;
+            }
+        }
     }
 }
