@@ -285,31 +285,31 @@ div.details {
   body {
     margin: 5px; }
   nav {
-    width: 150px;
-    margin-top: 8px; }
+    width: 325px;
+    margin-top: 16px; }
     nav li {
-      font-size: 9px;
-      padding-right: 5px; }
+      font-size: 18px;
+      padding-right: 8px; }
   div {
     position: absolute;
-    width: 175px;
-    top: 10%; }
+    width: 340px;
+    top: 30%; }
     div h1 {
-      margin-right: 0px;
-      font-size: 14px;
-      width: 175px; }
+      width: 342px;
+      font-size: 30px;
+      margin-right: 0px; }
       div h1 svg {
         height: 22px; }
     div form {
-      margin-left: 10px;
-      margin-top: 32px;
-      width: 155px;
+      margin-top: 40px;
+      width: 300px;
+      margin-left: 20px;
       margin-right: 0px; }
       div form input.search {
-        width: 120px;
-        padding: 3px;
         height: 15px;
-        padding-top: 0px; }
+        padding-top: 0px;
+        width: 250px;
+        padding: 5px; }
       div form input::placeholder {
         font-size: 6px; }
       div form i.fas.fa-search {
