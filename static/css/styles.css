@@ -280,3 +280,8 @@ div.details {
         letter-spacing: 5.5px;
         text-align: left;
         font-size: 48px; }
+
+@media (max-width: 360px) {
+  div {
+    position: absolute;
+    top: 50%; } }

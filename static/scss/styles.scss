@@ -400,3 +400,9 @@ h1#details {
     }
 }
 
+@media (max-width: 360px) {
+    div {
+    position: absolute;
+    top: 50%;
+    }
+}
