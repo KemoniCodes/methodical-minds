@@ -138,8 +138,7 @@ div.results-box {
 
 table.results {
   width: 55vw;
-  text-align: center;
-  margin: auto; }
+  text-align: center; }
 
 thead {
   text-align: left; }
@@ -314,7 +313,39 @@ div.details {
         font-size: 6px; }
       div form i.fas.fa-search {
         padding-left: 4px;
-        font-size: 10px; } }
+        font-size: 10px; }
+  h1#details {
+    font-size: 48px;
+    padding: 16px;
+    padding-top: 48px; }
+  div.details {
+    margin: 0px;
+    padding: 48px;
+    display: block; }
+    div.details div.cover-image {
+      display: block;
+      margin: 0px;
+      width: 100%; }
+    div.details div.review h2 {
+      text-align: center; }
+    div.details div.review form.review {
+      text-align: center; }
+    div.details p {
+      margin-left: 6.1rem; }
+    div.details div.book-details {
+      width: 100%;
+      text-align: center; }
+  h1 {
+    font-size: 35px;
+    margin-bottom: 48px; }
+  div.results-box h2.answer {
+    margin-bottom: 16px;
+    margin-left: 24px;
+    margin-right: 24px; }
+  table.results {
+    margin: 0px;
+    padding: 28px;
+    width: 100vw; } }
 
 @media (min-width: 375px) {
   nav {
@@ -330,7 +361,39 @@ div.details {
       margin-right: 0px;
       width: 340px; }
       div form input.search {
-        width: 300px; } }
+        width: 300px; }
+  h1#details {
+    font-size: 48px;
+    padding: 16px;
+    padding-top: 48px; }
+  div.details {
+    margin: 0px;
+    padding: 48px;
+    display: block; }
+    div.details div.cover-image {
+      display: block;
+      margin: 0px;
+      width: 100%; }
+    div.details div.review h2 {
+      text-align: center; }
+    div.details div.review form.review {
+      text-align: center; }
+    div.details p {
+      margin-left: 6.1rem; }
+    div.details div.book-details {
+      width: 100%;
+      text-align: center; }
+  h1 {
+    font-size: 35px;
+    margin-bottom: 48px; }
+  div.results-box h2.answer {
+    margin-bottom: 16px;
+    margin-left: 24px;
+    margin-right: 24px; }
+  table.results {
+    margin: 0px;
+    padding: 28px;
+    width: 100vw; } }
 
 @media (min-width: 411px) {
   div {
@@ -347,7 +410,40 @@ div.details {
         width: 67vw; }
       div form i.fas.fa-search {
         font-size: 1.2rem;
-        padding-left: 5px; } }
+        padding-left: 5px; }
+  h1#details {
+    font-size: 48px;
+    padding: 16px;
+    padding-top: 48px; }
+  div.details {
+    margin: 0px;
+    padding: 48px;
+    display: block; }
+    div.details div.cover-image {
+      display: block;
+      margin: 0px;
+      width: 100%; }
+    div.details div.review h2 {
+      text-align: center; }
+    div.details div.review form.review {
+      text-align: center; }
+    div.details p {
+      margin-left: 6.1rem; }
+    div.details div.book-details {
+      width: 100%;
+      text-align: center; }
+  h1 {
+    font-size: 35px;
+    margin-bottom: 48px; }
+  h2.answer {
+    margin: 0px;
+    margin-bottom: 16px;
+    margin-left: 24px;
+    margin-right: 24px; }
+  table.results {
+    margin: 0px;
+    padding: 28px;
+    width: 100vw; } }
 
 @media (min-width: 767px) {
   nav {

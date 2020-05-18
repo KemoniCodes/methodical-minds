@@ -245,6 +245,7 @@ h1#details {
     padding-top: 32px;
     position: relative;
     top: 0%;
+    
 
  
     div.book-details {
@@ -460,6 +461,63 @@ h1#details {
 
     }
 
+    h1#details {
+        font-size: 48px;
+        padding: 16px;
+        padding-top: 48px;
+    }
+
+    div.details {
+        margin: 0px;
+        padding: 48px;
+        display: block;
+
+        div.cover-image {
+            display: block;
+            margin: 0px;
+            width: 100%;
+        }
+
+        div.review {
+            h2 {
+                text-align: center;
+            }
+            
+            form.review {
+                text-align: center;
+            }
+        }
+
+        p {
+            margin-left: 6.1rem;
+        }
+
+        div.book-details {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    h1 {
+        font-size: 35px;
+        margin-bottom: 48px;
+    }
+    div.results-box {
+        h2.answer {
+            margin-bottom: 16px;
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+
+    }
+ 
+
+    table.results {
+        margin: 0px;
+        padding: 28px;
+        width: 100vw;
+    }
+
 }
 
 @media (min-width: 375px) {
@@ -487,6 +545,65 @@ h1#details {
                 width: 300px;
             }
         }
+    }
+
+    h1#details {
+        font-size: 48px;
+        padding: 16px;
+        padding-top: 48px;
+    }
+
+    div.details {
+        margin: 0px;
+        padding: 48px;
+        display: block;
+
+        div.cover-image {
+            display: block;
+            margin: 0px;
+            width: 100%;
+        }
+
+        div.review {
+            h2 {
+                text-align: center;
+            }
+            
+            form.review {
+                text-align: center;
+            }
+        }
+
+        p {
+            margin-left: 6.1rem;
+        }
+
+
+
+        div.book-details {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    h1 {
+        font-size: 35px;
+        margin-bottom: 48px;
+    }
+    div.results-box {
+        h2.answer {
+            margin-bottom: 16px;
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+
+    }
+ 
+
+    table.results {
+        margin: 0px;
+        padding: 28px;
+        width: 100vw;
     }
 }
 
@@ -528,11 +645,53 @@ h1#details {
     div.details {
         margin: 0px;
         padding: 48px;
+        display: block;
+
+
+        div.cover-image {
+            display: block;
+            margin: 0px;
+            width: 100%;
+        }
+
+        div.review {
+            h2 {
+                text-align: center;
+            }
+            
+            form.review {
+                text-align: center;
+            }
+        }
+
+        p {
+            margin-left: 6.1rem;
+        }
+
 
 
         div.book-details {
             width: 100%;
+            text-align: center;
         }
+    }
+
+    h1 {
+        font-size: 35px;
+        margin-bottom: 48px;
+    }
+
+    h2.answer {
+        margin: 0px;
+        margin-bottom: 16px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    table.results {
+        margin: 0px;
+        padding: 28px;
+        width: 100vw;
     }
 
 }
