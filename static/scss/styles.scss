@@ -189,7 +189,6 @@ div.results-box {
 table.results {
     width: 55vw;
     text-align: center;
-    margin: auto;
 }
 
 thead {
@@ -517,6 +516,22 @@ h1#details {
                 font-size: 1.2rem;
                 padding-left: 5px;
             }
+        }
+    }
+
+    h1#details {
+        font-size: 48px;
+        padding: 16px;
+        padding-top: 48px;
+    }
+
+    div.details {
+        margin: 0px;
+        padding: 48px;
+
+
+        div.book-details {
+            width: 100%;
         }
     }
 
