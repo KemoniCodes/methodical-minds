@@ -349,7 +349,7 @@ div.details {
     padding: 28px;
     width: 100vw; } }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   nav {
     width: 340px; }
   div {
@@ -399,7 +399,7 @@ div.details {
     padding: 28px;
     width: 100vw; } }
 
-@media (min-width: 411px) {
+@media (max-width: 411px) {
   div {
     width: 360px; }
     div h1 {
@@ -465,7 +465,20 @@ div.details {
       width: 700px;
       margin-left: 30px; }
       div form input.search {
-        width: 83vw; } }
+        width: 83vw; }
+  div.details {
+    margin: 0px;
+    display: block;
+    padding: 4rem; }
+    div.details div.review {
+      margin-top: 5rem; }
+    div.details div.cover-image {
+      margin-right: 0px;
+      width: 100%;
+      justify-content: center; }
+    div.details div.book-details {
+      width: 100%;
+      text-align: center; } }
 
 @media (min-width: 1040px) {
   nav {
