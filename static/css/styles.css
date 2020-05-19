@@ -335,6 +335,8 @@ div.details {
     div.details div.book-details {
       width: 100%;
       text-align: center; }
+      div.details div.book-details span p {
+        margin-left: 0px; }
   h1 {
     font-size: 35px;
     margin-bottom: 48px; }
@@ -383,6 +385,8 @@ div.details {
     div.details div.book-details {
       width: 100%;
       text-align: center; }
+      div.details div.book-details span p {
+        margin-left: 0px; }
   h1 {
     font-size: 35px;
     margin-bottom: 48px; }
@@ -432,6 +436,8 @@ div.details {
     div.details div.book-details {
       width: 100%;
       text-align: center; }
+      div.details div.book-details span p {
+        margin-left: 0px; }
   h1 {
     font-size: 35px;
     margin-bottom: 48px; }
