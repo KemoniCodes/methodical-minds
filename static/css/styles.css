@@ -451,7 +451,7 @@ div.details {
     padding: 28px;
     width: 100vw; } }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   nav {
     width: 730px; }
     nav li {
