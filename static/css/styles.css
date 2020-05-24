@@ -478,7 +478,9 @@ div.details {
       justify-content: center; }
     div.details div.book-details {
       width: 100%;
-      text-align: center; } }
+      text-align: center; }
+  table.results {
+    margin-left: 24rem; } }
 
 @media (min-width: 1040px) {
   nav {
